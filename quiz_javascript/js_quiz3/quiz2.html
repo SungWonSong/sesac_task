@@ -67,15 +67,15 @@
     </ul>
 
     <script>
-      function printMsg(msg) {
-        // TODO: 반복문을 사용해서 함수 내부 코드를 개선해주세요!
-        console.log(msg.toUpperCase());
-        console.log(msg.toUpperCase());
-        console.log(msg.toUpperCase());
+      function printMsg(msg,count) {
+        console.log(`printMsg(${msg},${count})`);
+        for(let i =0; i<count; i++){
+          console.log(msg.toUpperCase());
+        }
       }
 
       // TODO: 해당 html 파일을 실행한 브라우저 콘솔창에서 printMsg 함수를 호출해주세요!
-      // printMsg('Wow!!', 5);
+      printMsg('Wow!!', 5);
     </script>
   </body>
 </html>

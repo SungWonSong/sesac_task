@@ -82,31 +82,30 @@
     <script>
       function whatDay(day) {
         // TODO: if 조건문으로 작성한 코드를 switch-case 문으로 변경해주세요.
-        if (day === 1) {
-          return '월';
-        } else if (day === 2) {
-          return '화';
-        } else if (day === 3) {
-          return '수';
-        } else if (day === 4) {
-          return '목';
-        } else if (day === 5) {
-          return '금';
-        } else if (day === 6) {
-          return '토';
-        } else if (day === 7) {
-          return '일';
-        } else {
-          return null;
+        switch (day) {
+          case 1 : console.log('월'); 
+          break;
+          case 2 : console.log('화'); 
+          break;
+          case 3 : console.log('수'); 
+          break;
+          case 4 : console.log('목'); 
+          break;
+          case 5 : console.log('금'); 
+          break;
+          case 6 : console.log('토'); 
+          break;
+          case 7 : console.log('일'); 
+          break;
+          default : console.log(null);
         }
       }
-
       // TODO: 해당 html 파일을 실행한 브라우저 콘솔창에서 whatDay 함수를 호출해주세요!
-      // whatDay(3);
-      // whatDay(7);
-      // whatDay(0);
-      // whatDay(10);
-      // whatDay('5');
+      whatDay(3);
+      whatDay(7);
+      whatDay(0);
+      whatDay(10);
+      whatDay('5');
     </script>
   </body>
 </html>
